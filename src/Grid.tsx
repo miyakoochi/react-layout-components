@@ -2,6 +2,8 @@ import React, { FC } from "react";
 import { GridProps } from "./types";
 
 const Grid: FC<GridProps> = ({
+  width,
+  height,
   templateColumns,
   templateRows,
   areas,
@@ -19,6 +21,8 @@ const Grid: FC<GridProps> = ({
 }) => {
   const style = {
     display: "grid",
+    width,
+    height,
     gridTemplateColumns: templateColumns,
     gridTemplateRows: templateRows,
     gridTemplateAreas: areas,

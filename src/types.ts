@@ -1,6 +1,8 @@
 import React from "react";
 
 export type GridProps = {
+  width?: string;
+  height?: string;
   templateColumns?: string;
   templateRows?: string;
   columnGap?: string;
@@ -16,6 +18,8 @@ export type GridProps = {
 } & React.HTMLAttributes<HTMLDivElement>;
 
 export type FlexProps = {
+  width?: string;
+  height?: string;
   direction?: "row" | "row-reverse" | "column" | "column-reverse";
   justifyContent?:
     | "flex-start"

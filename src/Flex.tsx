@@ -2,6 +2,8 @@ import React, { FC } from "react";
 import { FlexProps } from "./types";
 
 const Flex: FC<FlexProps> = ({
+  width,
+  height,
   direction,
   justifyContent,
   alignItems,
@@ -16,6 +18,8 @@ const Flex: FC<FlexProps> = ({
 }) => {
   const style = {
     display: "flex",
+    width,
+    height,
     flexDirection: direction,
     justifyContent,
     alignItems,
