@@ -14,3 +14,21 @@ export type GridProps = {
   grid?: string;
   children?: React.ReactNode;
 } & React.HTMLAttributes<HTMLDivElement>;
+
+export type FlexProps = {
+  direction?: "row" | "row-reverse" | "column" | "column-reverse";
+  justifyContent?:
+    | "flex-start"
+    | "flex-end"
+    | "center"
+    | "space-between"
+    | "space-around"
+    | "space-evenly";
+  alignItems?: "flex-start" | "flex-end" | "center" | "baseline" | "stretch";
+  wrap?: "nowrap" | "wrap" | "wrap-reverse";
+  grow?: number;
+  shrink?: number;
+  basis?: string | number;
+  flex?: string | number;
+  children?: React.ReactNode;
+} & React.HTMLAttributes<HTMLDivElement>;
