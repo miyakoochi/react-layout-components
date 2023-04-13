@@ -1,11 +1,20 @@
 {
   "name": "@miyakoochi/react-layout-components",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "type": "module",
   "scripts": {
     "build": "rollup -c"
   },
   "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/types/index.d.ts",
+  "files": [
+    "package.json",
+    "dist",
+    "src"
+  ],
+  "repository": "github:miyakoochi/react-layout-components",
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
