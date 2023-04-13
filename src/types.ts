@@ -1,10 +1,10 @@
 import React from "react";
 
 export type GridProps = {
-  columns?: string | number;
-  rows?: string | number;
-  columnGap?: string | number;
-  rowGap?: string | number;
+  templateColumns?: string;
+  templateRows?: string;
+  columnGap?: string;
+  rowGap?: string;
   justifyContent?: string;
   alignItems?: string;
   areas?: string;

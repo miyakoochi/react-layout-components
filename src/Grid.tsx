@@ -2,8 +2,8 @@ import React, { FC } from "react";
 import { GridProps } from "./types";
 
 const Grid: FC<GridProps> = ({
-  columns,
-  rows,
+  templateColumns,
+  templateRows,
   areas,
   columnGap,
   rowGap,
@@ -19,8 +19,8 @@ const Grid: FC<GridProps> = ({
 }) => {
   const style = {
     display: "grid",
-    gridTemplateColumns: columns,
-    gridTemplateRows: rows,
+    gridTemplateColumns: templateColumns,
+    gridTemplateRows: templateRows,
     gridTemplateAreas: areas,
     columnGap,
     rowGap,
